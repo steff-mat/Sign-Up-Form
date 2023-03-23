@@ -10,6 +10,7 @@ html {
 * {
   box-sizing: border-box;
   font-family: sans-serif;
+  /* outline: 1px solid black; */
 }
 
 body {
@@ -20,8 +21,48 @@ body {
 
 .right {
   display: grid;
-  grid-template-rows: 30% 40% 30%;
+  grid-template-rows: 35% 30% 35%;
   grid-template-columns: 100%;
+}
+
+.r-top,
+.r-bottom {
+  background-color: rgb(235, 235, 235);
+}
+
+.r-middle {
+  position: relative;
+  z-index: 1;
+  box-shadow: 2px 3px 4px rgb(183, 183, 183);
+}
+
+.ldt {
+  font-size: larger;
+}
+
+.form {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 50% 50%;
+}
+
+.align {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.align label {
+  font-size: smaller;
+}
+
+.pdnm {
+  margin-top: 0;
+  color: red;
+}
+
+.input-width {
+  max-width: 200px;
 }
 
 .x-100 {
@@ -29,22 +70,45 @@ body {
   height: 100%;
 }
 
-.left {
-  background-color: lightgray;
+.pl30px {
+  padding-left: 30px;
 }
 
-.right {
-  background-color: lightblue;
+.ml30px {
+  margin-left: 30px;
 }
 
-.r-top {
-  background-color: lightcoral;
+.r-bottom button {
+  margin-top: 30px;
+  width: 180px;
+  height: 35px;
+  border-color: none;
+  border: 1px solid darkgreen;
+  background-color: darkolivegreen;
+  color: white;
+  border-radius: 5px;
 }
 
-.r-middle {
-  background-color: lightgoldenrodyellow;
+.r-bottom button:hover {
+  background-color: rgb(75, 95, 42);
+  color: white;
 }
 
-.r-bottom {
-  background-color: lightpink;
+.r-bottom button:active {
+  background-color: rgb(65, 82, 36);
+  color: white;
+}
+
+.pl30mtb30 {
+  padding-left: 30px;
+  margin: 30px 0;
+}
+
+.r-bottom p {
+  margin-top: 30px;
+}
+
+.r-bottom a,
+.r-bottom a:visited {
+  color: darkolivegreen;
 }
