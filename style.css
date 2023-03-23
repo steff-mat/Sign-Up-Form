@@ -14,125 +14,37 @@ html {
 
 body {
   display: grid;
-  grid-template-columns: calc(100% - 60%) auto;
-  width: 100%;
-  height: 100dvh;
-  background-color: rgb(245, 245, 245);
+  grid-template-rows: 100dvh;
+  grid-template-columns: 30dvw 70dvw;
 }
 
-.image-container {
+.right {
   display: grid;
-  place-items: center;
-  background-color: antiquewhite;
+  grid-template-rows: 30% 40% 30%;
+  grid-template-columns: 100%;
 }
 
-.image-container img {
+.x-100 {
   width: 100%;
   height: 100%;
 }
 
-.box-overlay {
-  position: fixed;
-  top: 30%;
-  left: 0;
-  width: 40%;
-  height: 10%;
-  background-color: rgba(0, 0, 0, 0.6);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.left {
+  background-color: lightgray;
 }
 
-.box-overlay img {
-  height: 90%;
-  width: auto;
+.right {
+  background-color: lightblue;
 }
 
-.box-overlay p {
-  font-size: 3rem;
-  color: aliceblue;
-  font-family: NORSE-BOLD;
+.r-top {
+  background-color: lightcoral;
 }
 
-.form-side {
-  display: grid;
+.r-middle {
+  background-color: lightgoldenrodyellow;
 }
 
-.style-italic {
-  font-style: italic;
-}
-
-.weight-bold {
-  font-weight: bold;
-}
-
-.size-1rem {
-  font-size: 1rem;
-}
-
-.color-white {
-  color: black;
-}
-
-.bg-color-lightgrey {
-  background-color: rgb(245, 245, 245);
-}
-
-.bg-color-white {
-  background-color: white;
-}
-
-.pl-30px {
-  padding-left: 30px;
-}
-
-.size-06rem {
-  font-size: 0.6rem;
-}
-
-.shadow {
-  box-shadow: 2px 3px 4px #b9b9b9;
-  position: relative;
-}
-
-.text {
-  margin: 80px 0 -50px 0;
-}
-
-form {
-  display: grid;
-  grid-template-columns: auto auto;
-  gap: 15px;
-}
-
-form div {
-  display: grid;
-}
-
-input {
-  max-width: 200px;
-  border-radius: 3px;
-  border: 1px solid lightgray;
-}
-
-.z--1 {
-  z-index: -1;
-}
-
-.button {
-  z-index: 1;
-  margin-top: 30px;
-  width: 150px;
-  height: 40px;
-  border-radius: 7px;
-  background-color: #506743;
-  color: white;
-  border-color: #506743;
-}
-
-.button:hover {
-  z-index: 1;
-  background-color: white;
-  border-color: #506743;
-  color: #506743;
+.r-bottom {
+  background-color: lightpink;
 }
